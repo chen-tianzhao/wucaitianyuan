@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>玉林五彩田园 · 家乡文旅宣传</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', 'Microsoft YaHei', system-ui, sans-serif;
+            background: #f5fdf5;
+            color: #2c3e2f;
+            line-height: 1.5;
+        }
+        /* 头部 */
+        .hero {
+            background: linear-gradient(135deg, #2b5e2b, #4c9a4c);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+        .hero h1 {
+            font-size: 2rem;
+            margin-bottom: 8px;
+            letter-spacing: 2px;
+        }
+        .hero p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        /* 简介区 */
+        .intro {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 0 20px;
+            text-align: center;
+            background: white;
+            border-radius: 24px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            padding: 24px;
+        }
+        .intro p {
+            font-size: 1rem;
+            color: #3a5a3a;
+        }
+        /* 景点网格 */
+        .grid {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 28px;
+        }
+        .card {
+            background: white;
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 28px rgba(0,0,0,0.12);
+        }
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+        .card h3 {
+            font-size: 1.4rem;
+            margin: 16px 16px 8px;
+            color: #1f543f;
+        }
+        .card p {
+            margin: 0 16px 20px;
+            color: #3e5a3c;
+            font-size: 0.95rem;
+        }
+        /* 实用信息区 */
+        .info-section {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 28px;
+        }
+        .info-card {
+            background: white;
+            border-radius: 24px;
+            padding: 20px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+        .info-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 16px;
+            color: #2b5e2b;
+            border-left: 5px solid #4c9a4c;
+            padding-left: 12px;
+        }
+        .info-card ul, .info-card p {
+            margin: 0 0 8px 0;
+            color: #3a5a3a;
+            font-size: 0.95rem;
+        }
+        .info-card li {
+            margin-left: 20px;
+            margin-bottom: 8px;
+        }
+        /* 页脚 */
+        .footer {
+            background: #1d3e1d;
+            color: #e0f0e0;
+            text-align: center;
+            padding: 24px;
+            margin-top: 40px;
+            font-size: 0.9rem;
+        }
+        .footer a {
+            color: #ffd966;
+            text-decoration: none;
+        }
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 1.6rem; }
+            .card h3 { font-size: 1.2rem; }
+            .info-card h3 { font-size: 1.2rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>🌾 玉林 · 五彩田园 🌸</h1>
+        <p>国家4A级景区 | 百里生态画廊 · 中国希望田野</p>
+    </div>
+
+    <div class="intro">
+        <p><strong>玉林五彩田园</strong>位于玉林市玉东新区茂林镇，距市区仅3公里，核心区+拓展区总面积52平方公里。<br>
+        这里集现代农业、田园观光、科普教育、休闲体验于一体，荣获“中国农业公园”“国际慢城”等称号，是感受家乡魅力的绝佳去处。</p>
+    </div>
+
+    <!-- 四大核心景点（卡片） -->
+    <div class="grid">
+        <div class="card">
+            <img src= "C:\Users\Acer\Downloads\305bf37e4e78fa4d8f1aed89b771f1e3~tplv-be4g95zd3a-image.jpeg"?auto=compress&cs=tinysrgb&w=600" alt="农业嘉年华">
+            <h3>🌽 农业嘉年华（收费）</h3>
+            <p>全国规模较大的高科技农业展示馆群，8大主题展馆：瓜彩世界（巨型南瓜）、农艺高科（无土栽培）、神农草堂（南药科普）、玉蔬林风等，科技感十足。</p>
+        </div>
+        <div class="card">
+            <img src="C:\Users\Acer\Downloads\813f6f5293f44f61aaacc9fb7a197122.jpeg~tplv-a9rns2rl98-image.png"?auto=compress&cs=tinysrgb&w=600" alt="五彩花海/樱花大道">
+            <h3>🌸 五彩花海 · 樱花大道（免费）</h3>
+            <p>春季樱花、油菜花、格桑花盛放；夏秋向日葵、荷花、百日草轮番开放。白色荷兰风车点缀，拍照打卡圣地。</p>
+        </div>
+        <div class="card">
+            <img src="C:\Users\Acer\Downloads\73bee8f06f44b799be870e7a3e00a052~tplv-be4g95zd3a-image.jpeg"auto=compress&cs=tinysrgb&w=600" alt="自然与人文景观">
+            <h3>⛰️ 自然人文（免费）</h3>
+            <p>伟人山、穿镜山、水月岩等喀斯特奇峰；宝相寺（宋末古刹）禅意古朴，登高可俯瞰全景。</p>
+        </div>
+        <div class="card">
+            <img src="C:\Users\Acer\Downloads\7096f3f3ec97209ac89367ee81b3d0a2~tplv-be4g95zd3a-image.jpeg"？auto=compress&cs=tinysrgb&w=600" alt="休闲体验项目">
+            <h3>🚜 休闲体验（部分收费）</h3>
+            <p>田园小火车环游花海稻田、四季采摘（草莓/圣女果）、骑行绿道、萌宠乐园、露营草坪，适合家庭与研学。</p>
+        </div>
+    </div>
+
+    <!-- 实用信息 + 交通美食 -->
+    <div class="info-section">
+        <div class="info-card">
+            <h3>📅 开放时间</h3>
+            <ul>
+                <li><strong>景区全域：</strong>全天开放（户外免费区）</li>
+                <li><strong>农业嘉年华：</strong>9:00-17:30（17:00停止入园）</li>
+            </ul>
+            <h3 style="margin-top: 20px;">🎫 门票信息</h3>
+            <ul>
+                <li>景区、花海、登山：<strong>免费</strong></li>
+                <li>农业嘉年华：50元/人（平台优惠约45元）</li>
+                <li>优待：0.9米以下儿童、70岁以上老人免票</li>
+            </ul>
+        </div>
+        <div class="info-card">
+            <h3>🚗 交通指南</h3>
+            <ul>
+                <li><strong>自驾：</strong>导航“五彩田园”，距玉林市区约10分钟，有停车场</li>
+                <li><strong>公交：</strong>玉林市区乘19路、21路公交直达</li>
+                <li><strong>打车：</strong>市区→景区约15元</li>
+            </ul>
+            <h3 style="margin-top: 20px;">🍜 美食推荐</h3>
+            <ul>
+                <li>景区农家乐：土鸡煲、现摘时蔬、芋头扣肉</li>
+                <li>周边特色：大塘米粉、客家酿豆腐、玉林小吃</li>
+            </ul>
+        </div>
+        <div class="info-card">
+            <h3>📌 最佳季节 & 游玩建议</h3>
+            <ul>
+                <li><strong>最佳时间：</strong>3-5月（春花）、9-11月（秋实）</li>
+                <li><strong>半日游：</strong>花海 + 农业嘉年华（3-4小时）</li>
+                <li><strong>一日游：</strong>展馆 + 花海 + 登山 + 采摘/小火车</li>
+            </ul>
+            <p style="margin-top: 16px;"><strong>💡 小贴士：</strong>农业嘉年华建议上午入园，避开人流；骑行绿道可租单车漫游全域。</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>📍 地址：广西玉林市玉东新区茂林镇 五彩田园景区</p>
+        <p>🌐 本网页为玉林高中生家乡文旅宣传作品 | 欢迎来五彩田园，感受田园慢生活！</p>
+        <p>✨ 作者声明：资料来源于网络，仅供参考 |✨</p>
+	<P>网页制作：陈 天
+    </div>
+</body>
+</html>
